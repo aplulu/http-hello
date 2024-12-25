@@ -40,14 +40,16 @@ The server can be configured using the following environment variables:
 
 The server can be configured using the following environment variables:
 
-| Variable         | Description                                | Default Value                  |
-|------------------|--------------------------------------------|--------------------------------|
-| `PORT`           | Port for the server to listen on           | `8080`                         |
-| `JWKS_URL`       | URL for the JSON Web Key Set               |                                |
-| `JWK_HEADER_NAME`| Header name for the JWK                    | `Authorization`                |
-| `TITLE`          | Title for the HTML response                | `Congratulations`              |
-| `SUCCESS_MESSAGE`| Success message for the HTML response      | `Successfully deployed.`       |
-| `CUSTOM_DATA`    | Custom user data to display in the HTML response | `Issuer:.iss,Subject:.sub` |
+| Variable         | Description                                | Default Value                |
+|------------------|--------------------------------------------|------------------------------|
+| `PORT`           | Port for the server to listen on           | `8080`                       |
+| `JWKS_URL`       | URL for the JSON Web Key Set               |                              |
+| `JWK_HEADER_NAME`| Header name for the JWK                    | `Authorization`              |
+| `TITLE`          | Title for the HTML response                | `Congratulations`            |
+| `SUCCESS_MESSAGE`| Success message for the HTML response      | `Successfully deployed.`     |
+| `CUSTOM_DATA`    | Custom user data to display in the HTML response | `Issuer:iss,Subject:sub` |
+| `TLS_INSECURE`   | Allow insecure TLS connections             | `false`                      |
+| `TLS_ADDITIONAL_CERT_BUNDLE` | Additional certificate bundle for TLS | |
 
 ## Deployment
 

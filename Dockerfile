@@ -1,4 +1,4 @@
-FROM golang:1.23-alpine AS builder
+FROM golang:1.23 AS builder
 
 WORKDIR /app
 
@@ -6,7 +6,7 @@ COPY go.mod go.sum ./
 RUN go mod download
 
 COPY . .
-RUN go build -o /app/hello .
+RUN CGO_ENABLED=0 GOOS=linux go build -o hello
 
 FROM scratch
 
